@@ -6,7 +6,7 @@
 
 
 ```
-https://7xhub-api.shardweb.app/api/ia/nano?prompt={prompt}&ref={files/link}&auth={auth_key}
+https://7xhub-api.shardweb.app/api/ia/nano7x?prompt={prompt}&ref={files/link}&auth={auth_key}
 ```
 
 ---
