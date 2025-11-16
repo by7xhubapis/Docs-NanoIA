@@ -7,7 +7,7 @@
 ## 1) Gerar imagem **(Sem referência)**
 
 **Exemplo de requisição python**
-```
+```python
 import requests
 import base64
 import os
