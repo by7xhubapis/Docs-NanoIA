@@ -4,8 +4,9 @@
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/0xme/0xme/output/github-contribution-grid-snake.svg">
 </picture>
 
+
 ```
-https://7xhub-api.shardweb.app/api/ia/nano?
+https://7xhub-api.shardweb.app/api/ia/nano?prompt={prompt}&ref={files/link}&auth={auth_key}
 ```
 
 ---
