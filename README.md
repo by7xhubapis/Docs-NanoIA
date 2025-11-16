@@ -59,7 +59,7 @@ https://7xhub-api.shardweb.app/api/ia/nano?prompt={prompt}&ref={files/link}&auth
 }
 ```
 
-**Erros**
+## 3) Erros globais e significados
 - 400 `{ "type": "invalid_request" }`
 - 404 `{ "type": "player_not_found" }`
 - 500 `{ "type": "erro_interno" }`
