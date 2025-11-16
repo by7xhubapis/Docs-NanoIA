@@ -42,9 +42,7 @@ def gerar_imagem_nano(prompt, auth, ref_url=None):
         print("Erro na requisição:", e)
         return None
 
-# ===============================
 # Exemplo de uso
-# ===============================
 if __name__ == "__main__":
     prompt = "Gere um avião vermelho! ✈️"
     auth = "auth_key"
