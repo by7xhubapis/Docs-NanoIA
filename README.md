@@ -59,24 +59,19 @@ if __name__ == "__main__":
 {
   "developer": "7XHUB APIS",
   "status": "success",
-  "quantidadeContas": 2,
-  "contas": [
-    {
-      "id": "13454812921",
-      "nivel": 2,
-      "experiencia": 48,
-      "nickname": "7xHub-#727",
-      "regiao": "br"
+  "type": "without_reference",
+  "image": {
+    "image_id": "802eba30bded44299414830ad85e9a84",
+    "prompt": "deixa com cores vermelhas",
+    "reference_used": false,
+    "reference_size": false,
+    "generated_image_size": {
+      "bytes": 1495163,
+      "kb": 1460.12
     },
-    {
-      "id": "13429214319",
-      "nivel": 2,
-      "experiencia": 48,
-      "curtidas": 98,
-      "nickname": "7xhub-#828",
-      "regiao": "br"
-    }
-  ]
+    "time": 9646.74,
+    "url": "https://nanoapi7xhub.shardweb.app/api/generate/nano?imagem=802eba30bded44299414830ad85e9a84"
+  }
 }
 ```
 
