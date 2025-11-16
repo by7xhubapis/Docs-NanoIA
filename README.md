@@ -62,7 +62,7 @@ if __name__ == "__main__":
   "type": "without_reference",
   "image": {
     "image_id": "802eba30bded44299414830ad85e9a84",
-    "prompt": "deixa com cores vermelhas",
+    "prompt": "Gere um avião vermelho! ✈️",
     "reference_used": false,
     "reference_size": false,
     "generated_image_size": {
