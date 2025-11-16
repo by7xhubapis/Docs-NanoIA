@@ -46,8 +46,8 @@ def gerar_imagem_nano(prompt, auth, ref_url=None):
 # Exemplo de uso
 # ===============================
 if __name__ == "__main__":
-    prompt = "Deixa com cores vermelhas"
-    auth = "7xHub-1DjX9NcR-qx82AUio-cQxz7ApO"
+    prompt = "Gere um avião vermelho! ✈️"
+    auth = "auth_key"
     ref_url = None  # Pode colocar uma URL de referência se quiser
 
     resultado = gerar_imagem_nano(prompt, auth, ref_url)
