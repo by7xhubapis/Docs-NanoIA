@@ -4,12 +4,11 @@
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/0xme/0xme/output/github-contribution-grid-snake.svg">
 </picture>
 
-## Url base para requisição
 ```
 https://7xhub-api.shardweb.app/
 ```
 
-
+---
 ## 1) Gerar imagens **(Metodo Post)**
 
 **Exemplo de requisição python**
