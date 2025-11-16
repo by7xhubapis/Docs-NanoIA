@@ -9,21 +9,18 @@
 **Exemplo de requisição python**
 ```python
 import requests
-import base64
-import os
 
-def gerar_imagem_nano(prompt, auth, ref_url=None, salvar_como="resultado.png"):
+def gerar_imagem_nano(prompt, auth, ref_url=None):
     """
-    Função para gerar imagem usando a API Nano7x via método GET.
+    Gera uma imagem usando a API Nano7x via GET.
     
     Parâmetros:
     - prompt: Texto descrevendo a imagem desejada.
-    - auth: Chave de autenticação fornecida pela API.
-    - ref_url: (Opcional) URL de uma imagem de referência.
-    - salvar_como: Nome do arquivo para salvar a imagem gerada.
+    - auth: Chave de autenticação da API.
+    - ref_url: (Opcional) URL de imagem de referência.
     
     Retorna:
-    - Dicionário com resposta da API.
+    - Resposta da API em JSON.
     """
 
     url = "https://7xhub-api.shardweb.app/api/ia/nano7x"
@@ -34,36 +31,13 @@ def gerar_imagem_nano(prompt, auth, ref_url=None, salvar_como="resultado.png"):
         "auth": auth
     }
 
-    # Se houver URL de referência, adiciona
     if ref_url:
         params["ref"] = ref_url
 
     try:
-        # Requisição GET
         response = requests.get(url, params=params, timeout=300)
-        response.raise_for_status()  # Garante que erros HTTP sejam lançados
-        data = response.json()
-
-        # Se a API retornar base64 da imagem
-        if "image_base64" in data:
-            imagem_bytes = base64.b64decode(data["image_base64"])
-            with open(salvar_como, "wb") as f:
-                f.write(imagem_bytes)
-            print(f"Imagem salva como {salvar_como}")
-        
-        # Se a API retornar URL da imagem
-        elif "image_url" in data:
-            img_response = requests.get(data["image_url"], timeout=300)
-            img_response.raise_for_status()
-            with open(salvar_como, "wb") as f:
-                f.write(img_response.content)
-            print(f"Imagem baixada da URL e salva como {salvar_como}")
-        
-        else:
-            print("Resposta da API não contém imagem para salvar.")
-
-        return data
-
+        response.raise_for_status()  # Lança erro se status != 200
+        return response.json()
     except requests.exceptions.RequestException as e:
         print("Erro na requisição:", e)
         return None
@@ -72,9 +46,9 @@ def gerar_imagem_nano(prompt, auth, ref_url=None, salvar_como="resultado.png"):
 # Exemplo de uso
 # ===============================
 if __name__ == "__main__":
-    prompt = "Gere um avião. ✈️"
-    auth = "auth_key"
-    ref_url = None  # Ou uma URL de imagem de referência, ex: "https://site.com/logo.png"
+    prompt = "Deixa com cores vermelhas"
+    auth = "7xHub-1DjX9NcR-qx82AUio-cQxz7ApO"
+    ref_url = None  # Pode colocar uma URL de referência se quiser
 
     resultado = gerar_imagem_nano(prompt, auth, ref_url)
     print("Resposta da API:", resultado)
