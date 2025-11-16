@@ -61,6 +61,8 @@ https://7xhub-api.shardweb.app/api/ia/nano7x?prompt={prompt}&ref={files/link}&au
 
 ## 3) Erros Globais **(Get / Post)**
 - 400 `{ "type": "invalid_request" }`
-- 404 `{ "type": "player_not_found" }`
+- 400 `{ "type": "invalid_reference" }`
+- 400 `{ "type": "generate_error" }`
+- 408 `{ "type": "timeout_error" }`
 - 500 `{ "type": "erro_interno" }`
 ---
