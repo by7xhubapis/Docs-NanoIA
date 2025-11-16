@@ -4,7 +4,7 @@
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/0xme/0xme/output/github-contribution-grid-snake.svg">
 </picture>
 
-## 1) Gerar imagem **(Sem referência)**
+## 1) Gerar imagem **(Metodo Get)**
 
 **Exemplo de requisição python**
 ```python
