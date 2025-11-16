@@ -72,8 +72,8 @@ def gerar_imagem_nano(prompt, auth, ref_url=None, salvar_como="resultado.png"):
 # Exemplo de uso
 # ===============================
 if __name__ == "__main__":
-    prompt = "Deixa com cores vermelhas"
-    auth = "7xHub-1DjX9NcR-qx82AUio-cQxz7ApO"
+    prompt = "Gere um avião. ✈️"
+    auth = "auth_key"
     ref_url = None  # Ou uma URL de imagem de referência, ex: "https://site.com/logo.png"
 
     resultado = gerar_imagem_nano(prompt, auth, ref_url)
