@@ -9,7 +9,7 @@ https://7xhub-api.shardweb.app/
 ```
 
 ---
-## 1) Gerar imagens **(Metodo Post)**
+## 1) Gerar imagens **(Metodo Get)**
 
 **Resposta (200)**
 ```json
