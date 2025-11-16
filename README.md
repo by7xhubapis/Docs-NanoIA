@@ -70,7 +70,7 @@ if __name__ == "__main__":
       "kb": 1460.12
     },
     "time": 9646.74,
-    "url": "https://nanoapi7xhub.shardweb.app/api/generate/nano?imagem=802eba30bded44299414830ad85e9a84"
+    "url": "<domínio>/api/generate/nano?imagem=802eba30bded44299414830ad85e9a84"
   }
 }
 ```
