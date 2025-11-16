@@ -5,7 +5,7 @@
 </picture>
 
 ```
-https://7xhub-api.shardweb.app/
+https://7xhub-api.shardweb.app/api/ia/nano?
 ```
 
 ---
