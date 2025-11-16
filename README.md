@@ -6,7 +6,7 @@
 
 ## 1) Gerar imagem **(Sem referência)**
 
-**Exemplo**
+**Exemplo de requisição python**
 ```
 GET https://7xhub-api.shardweb.app/api/ff/search-nickname?nickname={nome}&region={region}&auth={auth_key}
 ```
